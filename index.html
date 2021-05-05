@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>My site</title>
 </head>
 <body>
     <div id="header">
@@ -14,20 +14,26 @@
     <div id="content">
         <h1>Hey, here's my site</h1>
         <ul>
-            <li>milk</li>
-            <li>eggs</li>
+            <li>You'll be flattered</li>
+            <li>You really will</li>
         </ul>
         <input type="text" id="name">
         <button id="addOne">Add One</button>
     </div>
     <div id="footer">©2021 Me Myself and I</div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
-    </script>
-    <script>
-        $('#addOne').click(function() {
-        var value = $('#name').val();
-        alert(value);
-        });
-    </script>
+    
+    <script type="text/javascript">
+        function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src ="scripts/main.js";
+            document.body.appendChild(element);
+        }
+      
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+      </script>
 </body>
 </html>
