@@ -25,10 +25,8 @@
     </script>
     <script>
         $('#addOne').click(function() {
-        $('#header h1').html('My Amazing Site');
-        $('ul').append('<li>ham</li>')
-        $('ul li:eq(0)').remove();
-        $('ul').prepend('<li>tuna</li>')
+        var value = $('#name').val();
+        alert(value);
         });
     </script>
 </body>
