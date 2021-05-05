@@ -1,0 +1,14 @@
+#header {
+    background-color: grey;
+    color: white;
+    display: flex;
+
+}
+
+#footer {
+    margin-top: 0;
+    padding: 10px;
+    background-color: black;
+    color: grey;
+}
+
