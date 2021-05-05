@@ -13,10 +13,19 @@
     </div>
     <div id="content">
         <h1>Hey, here's my site</h1>
+        <ul>
+            <li>milk</li>
+            <li>eggs</li>
+        </ul>
     </div>
-    <script>
-     
-    </script>
     <div id="footer">©2021 Me Myself and I</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+    <script>
+        $('#header h1').html('Who are you?');
+        $('ul').append('<li>sassage</li>');
+        $('ul li:eq(1)').remove;
+
+    </script>
 </body>
 </html>
