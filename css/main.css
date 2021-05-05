@@ -2,9 +2,13 @@
     background-color: grey;
     color: white;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
+#addOne {
+    margin-bottom: 10px;
+}
 #footer {
     margin-top: 0;
     padding: 10px;

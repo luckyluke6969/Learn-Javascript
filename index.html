@@ -17,15 +17,19 @@
             <li>milk</li>
             <li>eggs</li>
         </ul>
+        <input type="text" id="name">
+        <button id="addOne">Add One</button>
     </div>
     <div id="footer">©2021 Me Myself and I</div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js">
     </script>
     <script>
-        $('#header h1').html('Who are you?');
-        $('ul').append('<li>sassage</li>');
-        $('ul li:eq(1)').remove;
-
+        $('#addOne').click(function() {
+        $('#header h1').html('My Amazing Site');
+        $('ul').append('<li>ham</li>')
+        $('ul li:eq(0)').remove();
+        $('ul').prepend('<li>tuna</li>')
+        });
     </script>
 </body>
 </html>
